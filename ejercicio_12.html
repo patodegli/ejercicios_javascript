@@ -1,43 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/ xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ejercicio 11</title>
-  <script>
-    function alPincharEnlace () {
-      console.log('bien');
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Ejercicio 12 - DOM básico y atributos XHTML</title>
+  <style type="text/css">
+    .oculto {
+      display: none;
+    }
+
+    .visible {
+      display: inline;
+    }
+  </style>
+  <script type="text/javascript">
+    function muestra() {
+      
     }
   </script>
 </head>
+
 <body>
-  <main>
-    <p>
-      A partir de la página web proporcionada y utilizando las funciones DOM, mostrar por pantalla la siguiente información:
-      <ol>
-        <li>Número de enlaces de la página</li>
-        <li>Dirección a la que enlaza el penúltimo enlace</li>
-        <li>Numero de enlaces que enlazan a <a href="http://prueba">http://prueba</a></li>
-        <li>Número de enlaces del tercer párrafo</li>
-      </ol>
-    </p>
-    <p>
-      Este es un párrafo que contiene un <a href="http://prueba.com/ejercicio11">enlace a prueba</a>.
-    </p>
-    <p>
-      If this dialog fails to load, you can visit <a href="/patodegli/ejercicios_javascript/fork">the
-      fork page</a> directly.
-      <br/><br />
-      Work fast with our official CLI.
-      <a href="javascript:alPincharEnlace()">Learn more</a>.
-    </p>
-    <p>
-      If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.<br/>
-      If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.<br/>
-      If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and
-      try again.
-    </p>
-  </main>
+  <p id="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero.
+    Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae,
+    rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. <span
+      id="adicional" class="oculto">Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper
+      quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu,
+      at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque. Donec
+      lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec arcu. Nam sed tortor nec ipsum aliquam
+      ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer lacus. Vestibulum venenatis erat eu odio.
+      Praesent id metus.</span></p>
+  <a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a>
 </body>
+
 </html>
